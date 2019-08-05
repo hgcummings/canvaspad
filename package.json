@@ -1,0 +1,11 @@
+{
+  "name": "canvaspad",
+  "version": "0.0.1",
+  "description": "Rapid feedback code sketcher for the Canvas Web API",
+  "main": "index.js",
+  "author": "hgcummings",
+  "license": "MIT",
+  "dependencies": {
+    "ace-builds": "^1.4.5"
+  }
+}

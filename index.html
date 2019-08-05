@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CanvasPad</title>
+<style type="text/css" media="screen">
+    html {
+        background-color: black;
+        overflow: hidden;
+    }
+
+    body {
+        display: flex;
+        margin: 0;
+    }
+
+    #editor { 
+        flex-grow: 1;
+    }
+
+    #preview {
+        width: 576px;
+    }
+</style>
+</head>
+<body>
+
+<div id="editor">(ctx, unit) => {
+    ctx.fillStyle = '#ffffff';
+    ctx.drawCircle(0, 0, unit / 4);
+    ctx.fill();
+}</div>
+<div id="preview">
+
+</div>
+    
+<script src="./node_modules/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="./canvaspad-lib.js" type="text/javascript" charset="utf-8"></script>
+<script src="./canvaspad.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
